@@ -1,0 +1,34 @@
+body{
+    
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+}
+
+.box1{
+    background-color: #adb498;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    border: 1px solid #666;
+}
+
+.box2{
+    background-color:  rgb(111, 23, 193);
+    width: 200px;
+    height: 200px;
+    border: 3px solid;
+}
+
+.box3{
+    background-color:rgb(248, 168, 194);   
+    padding: 20px;
+    text-align: center;
+    border: 3px solid;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
