@@ -37,6 +37,7 @@ td {
 
 .row8{
     background-color:gray;
+    height: 100px;
 }
 
 body {
@@ -45,3 +46,21 @@ body {
     justify-content: center;
     height: 90vh;
   }
+
+.w1{
+    width: 30px;
+    /* height: 100px; */
+    
+}
+
+.w6{
+    height: 100px;
+}
+
+.w2{
+    height: 60px;
+}
+
+.r5{
+    height: 1Px;
+}
