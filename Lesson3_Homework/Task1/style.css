@@ -18,17 +18,13 @@
     margin: 20px;
 }
 
-.label{
-    margin:     0px 20px 20px 20px;
-    text-align: center;
 
-}
 
 .date{
     display: flex;
     gap: 15px;
-    margin: 0 0 60px 127px;
-
+    margin: 0 0 0 127px;
+    
 }
 
 .selectData{
@@ -38,6 +34,83 @@
 }
 
 .Month{
-    margin: 0px 10px 0px 20px;
+    margin: 0px 10px 0px 0px;
 }
 
+.gender {
+    display: flex;
+    margin: 12px 20px 20px 180px;
+    gap: 15px;
+}
+
+.genderlabel {
+    display: flex;
+	width: 165px;
+}   
+
+.gender input {
+    width: 10px;
+	margin: 0 10px;
+}
+
+.country{
+    margin: 0 0 0 170px;
+    display: flex;
+    gap: 22px;
+}
+
+.label{
+    margin: 0px 20px 20px 78px;
+}
+
+.email{
+    margin: 20px 20px 20px 177px;
+    gap: 22px;
+    display: flex;
+}
+
+.Phone{
+    margin: 20px 20px 20px 180px;
+    gap: 22px;
+    display: flex;
+}
+
+.Password{
+    margin: 20px 20px 20px 158px;
+    gap: 22px;
+    display: flex;
+}
+
+.Cpas{
+    margin: 20px 20px 20px 99px;
+    gap: 22px;
+    display: flex;
+}
+
+.chec{
+    margin: 20px 20px 0px 240px;
+}
+
+.footer input {
+	background-color: #222536;
+	outline: none;
+	border: none;
+	font-size: 18px;
+	background-color: #62af5e;
+	color: white;
+	padding: 10px 10px 10px 20px;
+    margin: 10px 200px 10px 20px;
+
+}
+
+.footer input:last-child {
+	background-color: #d9544f;
+    margin: 10px 10px 10px 200px;
+
+}
+
+.footer{
+    background-color: #DE8704;
+    margin: 0  30% 0 30%;
+
+}
