@@ -91,6 +91,7 @@ body{
     width: 330px;
     height: 37px;
     margin: 18px;
+    color: white;
 }
 
 .register{
@@ -103,12 +104,41 @@ body{
 
 .register2{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 18px;
-    font-weight: 100;
-    margin-left: -200px;
+    margin-top: -20px;
+    font-weight: 800;
+    margin-left: -110px;
     font-size: small;
-    color: #8A8E94;
+    color: #0D86C4;
+
    
 }
+
+.main3{
+    text-align: center;
+}
+
+.qrcode{
+    width: 150px;
+    margin-top: 50px;
+    margin-left: 20px;
+    border-radius: 3px;
+}
+
+.login{
+    margin-top: 20px;
+    color: white;
+    margin-left: 30px;
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.scan{
+    color: white;
+    margin-top: 13px;
+    margin-left: 20px;
+}
+
+
 
 
