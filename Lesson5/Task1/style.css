@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: aquamarine;
+    margin: 20px 30px 0px 30px;
+    height: 60px;
+}
+
+
+.div{
+    display: inline-block;
+    color:blue;
+    margin: 15px 0px 0px 180px;
+    font-weight: 500px;       
+    font-size: 20px;
+    line-height: 28px; 
+    mix-blend-mode: normal;
+
+}
+
+.haqida {
+    background-color:cornflowerblue;
+    color: chartreuse;
+    text-align: center;
+    margin: 0px 30px 0px 30px;
+    height: 560px;
+
+    
+}
+
+.haqida img{
+    border-radius: 140%;
+    width: 500px;
+    margin-top: 130px;
+    margin-left: 150px;
+    float: left;
+}
+
+.foter{
+    text-align: center;
+    background-color: blue;
+    margin: 0px 30px 120px 30px;
+    height: 60px;
+
+}
+
+.haqida p{
+    width: 2110px;
+    max-width: 3000px;
+}
+
+
+
+

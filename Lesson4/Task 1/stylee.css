@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	flex-direction: column;
+	height: 60vh;
+}
+
+
+img {
+	width: 200px;
+    margin: 350px 0px 0px 0px;
+}
+
+.icon{
+    text-align: center;
+}
+.container {
+	width: 700px;
+    background-color: #212121;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    background-color: black;
+}
+
+.flexf{
+    background-color:  #212121;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 40px 190px 0px 190px;
+    color: white;
+}
+
+.icon{
+    color: white; 
+}
+
+.icon p{
+    margin: 10px;
+    color: #A1A1A1;
+}
+
+form {
+	color: white;    
+}
+
+legend {
+	color: #a2acb4;
+	font-size: 0.8rem;
+}
+
+fieldset select,
+fieldset input {
+	color: white;
+	font-size: 0.875rem;
+	font-weight: 500;
+	padding-bottom: 5px;
+	width: 100%;
+}
+
+fieldset:hover,
+fieldset:hover legend {
+	border-color: #a5d520;
+	color: #a5d520;
+}
+
+select,
+input {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	position: relative;
+}
+
+.phone{
+    margin: 23px 189px 0px 189px;
+}
+
+.keep-signed{
+	margin: 30px 0px 0px 205px;
+	color: white;
+}
+
+.qr{
+	text-align: center;
+	color: #6A5DAA;
+	margin: 50px 0px 160px 0px;
+}
+
+

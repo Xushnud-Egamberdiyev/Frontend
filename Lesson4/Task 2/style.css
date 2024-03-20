@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(photo_2024-03-20_15-19-25.jpg);
+}
+
+.main{
+    width: 620px;
+    height: 330px;
+    background-color: #313338;
+    margin-left: 340px;
+    margin-top: 209px;
+    display: flex;
+    border-radius: 4px;
+    
+}
+
+
+.box-1{
+    margin-top: 22px;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    color: white;
+}
+
+.box-2{
+    color: #A2A7AE;
+    margin: 10px;
+
+}
+
+.main p{
+    font-size: 11px;
+}
+
+.label{
+    color: #ABAFB6;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 9px;
+    margin: 20px 0px 0px 35px;
+    display: flex;
+}
+
+.label2{
+    display: flex;
+    color: #ABAFB6;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 9px;
+    margin: 20px 0px 0px 35px;
+}
+
+
+
+.info{
+    background-color: #1E1F22;
+    border: 0;
+    width: 330px;
+    height: 37px;
+    margin-top: 7px;
+    color: whitesmoke;
+    font-size: medium;
+    border-radius: 3px;    
+} 
+
+.info2{
+    background-color: #1E1F22;
+    border: 0;
+    width: 330px;
+    height: 37px;
+    margin-top: -199px;
+    color: whitesmoke;
+    font-size: medium;
+    border-radius: 3px;   
+     
+}
+
+.forgot{ 
+    display: flex;
+    margin: 10px 0px 0px 40px;
+    color: #0E87C5;
+}
+
+.button{
+    background-color: #5865F2;
+    width: 330px;
+    height: 37px;
+    margin: 18px;
+}
+
+.register{
+    display: flex;
+    color: #ABAFB6;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 9px;
+    margin: 0px 0px 7px 35px;
+}
+
+.register2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 18px;
+    font-weight: 100;
+    margin-left: -200px;
+    font-size: small;
+    color: #8A8E94;
+   
+}
+
+
