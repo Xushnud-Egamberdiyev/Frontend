@@ -8,14 +8,14 @@
 
     border: 1px solid black;
     width: 1300px;
-    height: 590px;
-    margin: 40px 40px 40px 40px;
+    height: 450px;
+    margin: 100px 40px 800px 40px;
 }
 
 .box1{
     width: 1350;
     height: 100px;
-    margin: 20px 20px 0.5px 20px;
+    margin: 20px 20px 1px 20px;
     background-color: #4D7298;
     border-radius: 5px;
     padding-top: 40px;
@@ -27,11 +27,25 @@
 .box2{
     width: 1350;
     height: 100px;
-    margin: 0px 20px 20px 20px;
+    margin: 0px 20px 1px 20px;
+    background-color: #4D7298;
+    border-radius: 5px; 
+    padding-top: 30px;
+    padding-left: 20px;
+    color: white;
+    border: 4px solid #7497bb;
+}
+
+.box3{
+    width: 4350;
+    height: 200px;
+    margin: 0px 20px 0.5px 20px;
     background-color: #4D7298;
     border-radius: 5px; 
     padding-top: 40px;
     padding-left: 20px;
     color: white;
     border: 4px solid #7497bb;
+    padding-left: 20px;
+
 }
