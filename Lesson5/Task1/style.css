@@ -1,57 +1,36 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.header{
-    background-color: aquamarine;
-    margin: 20px 30px 0px 30px;
-    height: 60px;
+body{
+    display: flex;
+    background-color: black;
 }
 
-
-.div{
-    display: inline-block;
-    color:blue;
-    margin: 15px 0px 0px 180px;
-    font-weight: 500px;       
-    font-size: 20px;
-    line-height: 28px; 
-    mix-blend-mode: normal;
-
-}
-
-.haqida {
-    background-color:cornflowerblue;
-    color: chartreuse;
+.button{
+    background-color: #4D7298;
+    width: 90px;
+    height: 40px;
+    margin: 0px 32px 3px 45px;
+    border-radius: 3px;
     text-align: center;
-    margin: 0px 30px 0px 30px;
-    height: 560px;
+    color: white;
+    border-color: rgb(75, 75, 161);
+}
+
+.main{
+    width: 695px;
+    height: 80px;
+    background-color: white;
 
     
-}
-
-.haqida img{
-    border-radius: 140%;
-    width: 500px;
-    margin-top: 130px;
-    margin-left: 150px;
-    float: left;
-}
-
-.foter{
+    padding-top: 20px;
     text-align: center;
-    background-color: blue;
-    margin: 0px 30px 120px 30px;
-    height: 60px;
-
+    margin:auto;
+    margin-top: 250px;
+    border-radius: 10px;
+    
+    
 }
-
-.haqida p{
-    width: 2110px;
-    max-width: 3000px;
-}
-
-
-
-

@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.divbox{
+    width: 500px;
+    height: 50px;
+    background-color:#4D7298 ;
+    text-align: left;
+    color: white;
+    margin: 13px 0px 0px 130px;
+    border: 2px solid #2d3d4a;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.border{
+    border: 1px solid black;
+    width: 1350px;
+    height: 640px;
+    margin: 10px 10px 190px 10px;
+ } 

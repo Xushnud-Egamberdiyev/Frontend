@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 505px;
+    height: 255px;
+    
+    background-color: white;
+    display: flex;
+    
+    
+    margin:auto;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.lorem{
+    margin-left: 5px;
+  }
+
+.div{
+    width: 165px;
+    height: 245px;
+    background-color: #3B5875;
+    margin-top: 5px;
+    color: white;
+    padding: 10px;
+    border: 2px solid #688994;
+    border-radius: 8px;
+    line-height: 23px;
+      
+     
+     
+
+     
+  }
+
+
+
+
+
