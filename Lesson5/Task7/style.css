@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+
+    border: 1px solid black;
+    width: 700px;
+    height: 300px;
+    margin: 130px 0px 0px 280px;
+    background-color: white;
+}
+
+.box1{
+    display: flex;
+}
+
+body{
+    background-color: black;
+}
+
+.btn{
+   background-color: #4D7298;
+   width: 150px;
+   height: 40px;
+   color: white;
+    border-radius: 3px;
+    border: 2px solid;
+}
