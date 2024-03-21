@@ -7,9 +7,9 @@
 .main{
 
     border: 1px solid black;
-    width: 700px;
-    height: 300px;
-    margin: 130px 0px 0px 280px;
+    width: 600px;
+    height: 265px;
+    margin: 180px 0px 0px 380px;
     background-color: white;
 }
 
@@ -23,9 +23,39 @@ body{
 
 .btn{
    background-color: #4D7298;
-   width: 150px;
-   height: 40px;
+   width: 130px;
+   height: 60px;
    color: white;
-    border-radius: 3px;
-    border: 2px solid;
+   border-radius: 11px;
+   border: 2px solid #77A6B6;
+   margin-top: 20px;
+   margin-left: 15px;
+   font-size: 19px;
 }
+
+.btn2{
+    background-color: #4D7298;
+    width: 176px;
+    height: 60px;
+    color: white;
+    border-radius: 11px;
+    border: 2px solid #77A6B6;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 19px;
+ }
+
+ .btn3{
+    background-color: #4D7298;
+    width: 179px;
+    height: 60px;
+    color: white;
+    border-radius: 11px;
+    border: 2px solid #77A6B6;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 19px;
+ }
+
+ 
+
