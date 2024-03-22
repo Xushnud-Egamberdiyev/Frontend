@@ -7,24 +7,3 @@
 a{
     text-decoration: none;
 }
-
-button{
-    border: none;
-    cursor: pointer;
-}
-
-.container{
-    /* 1440-60*2=1320 */
-    width: 1320px;
-    margin: 0 auto;
-}
-
-.button{
-    padding: 24px 56px ;
-    background-color: #dfaa5b;
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    color: #ffffff;
-}
