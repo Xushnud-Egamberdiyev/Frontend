@@ -1,0 +1,31 @@
+.logo{
+    text-align: center ;
+    margin: 34px 0 48px;
+}
+
+nav ul{
+    text-align: center;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+nav a{
+    display: inline-block;
+    margin: 0 20px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #957554;
+    mix-blend-mode: normal;
+}
+
+section{
+    text-align: center;
+
+}
+
+

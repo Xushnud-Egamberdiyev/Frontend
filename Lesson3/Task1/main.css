@@ -2,3 +2,21 @@
 @import "header.css";
 @import "footer.css";
 
+#buttons{
+    background-color: black;
+}
+
+#buttons button{
+    padding: 18px 25px;
+    background-color: white;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: black;
+
+    mix-blend-mode: normal;
+}
