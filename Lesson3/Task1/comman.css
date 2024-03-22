@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+
 }
 
 a{
@@ -11,4 +15,33 @@ a{
 .container{
     width: 1320px;
     margin: 0 auto;
+}
+
+#facilities {
+    padding: 84px 0 95px;
+    background: rgb(7, 7, 7, 0.22);
+}
+
+
+
+.btn{
+    padding: 24px 56px;
+    border: 2px solid #dfaa5b;
+    background-color: #dfaa5b;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
 }

@@ -2,7 +2,12 @@
 @import "header.css";
 @import "footer.css";
 
+/* button section */
+
 #buttons{
+    padding: 27px 0 32px;
+    margin-top: 19px;
+    text-align: center;
     background-color: black;
 }
 
@@ -15,8 +20,58 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+    transition: 0.5s;
     
     color: black;
 
     mix-blend-mode: normal;
+    margin: 0 6.5px;
+}
+
+#buttons button:hover{
+    background-color: #dfaa5b;
+    color: white;
+}
+
+/* facilities section/ */
+
+.facilities-content h1{
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 92px;
+    color: white;
+}
+
+.facilities-content p{
+    margin: 11px 0 41px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: white; 
+}
+
+
+.facilities-row img{
+    width: 75px;
+    height: 75px;
+    color: #dfaa5b;
+
+}
+
+.facilities-row
+{
+    text-align: center;
+    padding: 42px 0 46px;
+    margin-top: 74px;
+    background: white;
+    border-radius: 10px;
+}
+
+.facilities-row article{
+    display: inline-block;
+    margin: 0 75px;
+}
+
+.facilities-row article p{
+    margin-top: 22px;
 }
