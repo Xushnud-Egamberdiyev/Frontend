@@ -2,10 +2,41 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Ubuntu", sans-serif;
 
 }
 
 a{
     text-decoration: none;
+} 
+
+.item{
+    width: 200px;
+    height: 200px;
+    font-size: 30px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content:  ;
+}
+
+
+.item:first-child{
+    background-color: red;
+}
+
+.item:nth-child(2){
+    background-color:aqua;
+}
+
+.item:nth-child(3){
+    background-color: yellow;
+}
+
+.item:nth-child(4){
+    background-color: goldenrod;
+}
+
+.item:last-child{
+    background-color: blue;
 }
