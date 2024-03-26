@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-origin: padding-box;
+}
+
+.container{
+    width: 1000px;
+    height: 740px;
+    background-color: rgb(55, 54, 54);
+    margin: 0px 0px 0px 245px;
+    
+}
+
+header{
+    height: 90px;
+    background-color: black;
+    display: flex
+}
+
+header h3{
+    color: white;
+    padding-top: 30px;
+    padding-left: 30px; 
+}
+
+header p{
+    color: gainsboro;
+    margin-top: 30px;
+    padding-left: 50px;
+}
+
+.img button{
+    width: 268px;
+    height: 40px;
+
+}
+
+.button1{
+    background-color: green;
+}
+
+.button2{
+    background-color: blue;
+}
+
+.img{
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.main{
+    display: flex;
+}
+
+.yozuv{
+    color: white;
+    padding-left: 40px;
+    padding-top: 45px;
+}
+
+.satr{
+    color: rgb(181, 174, 174);
+    width: 600px;
+    padding-top: 20px;
+}
+
+.janr{
+    display: flex;
+    padding-top: 20px;
+   
+}
+
+.janr p{
+    color: green;
+    padding-left: 10px;
+    
+}
+
+.aktor{
+    padding-top: 9px;
+    display: flex;
+}
+
+.aktor p{
+    color: green;
+    padding-left: 10px;
+}
+
+.aktor{
+    width: 500px;
+}
+
+.desc{
+    display: flex;
+    padding-top: 20px;
+}
+
+.h4{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.desc h4{
+    padding-top: 20px;
+}
+
+.rej{
+    padding-left: 200px;
+}
