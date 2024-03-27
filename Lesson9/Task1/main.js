@@ -16,7 +16,7 @@ function check() {
     if(round1 + round2 == user_guest){
         alert("Congratultions!")
     }
-    else{
+    else{   
         alert("Incorrect!" + sum)
     }
 

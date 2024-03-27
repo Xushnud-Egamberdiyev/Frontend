@@ -57,27 +57,7 @@
             From: "translate-x-0"
             To: "-translate-x-full"
         -->
-        <div class="relative flex w-full max-w-xs flex-col overflow-y-auto bg-white pb-12 shadow-xl">
-          <div class="flex px-4 pb-2 pt-5">
-            <button type="button" class="relative -m-2 inline-flex items-center justify-center rounded-md p-2 text-gray-400">
-              <span class="absolute -inset-0.5"></span>
-              <span class="sr-only">Close menu</span>
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-  
-          <!-- Links -->
-          <div class="mt-2">
-            <div class="border-b border-gray-200">
-              <div class="-mb-px flex space-x-8 px-4" aria-orientation="horizontal" role="tablist">
-                <!-- Selected: "border-indigo-600 text-indigo-600", Not Selected: "border-transparent text-gray-900" -->
-                <button id="tabs-1-tab-1" class="border-transparent text-gray-900 flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium" aria-controls="tabs-1-panel-1" role="tab" type="button">Women</button>
-                <!-- Selected: "border-indigo-600 text-indigo-600", Not Selected: "border-transparent text-gray-900" -->
-                <button id="tabs-1-tab-2" class="border-transparent text-gray-900 flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium" aria-controls="tabs-1-panel-2" role="tab" type="button">Men</button>
-              </div>
-            </div>
+
   
             <!-- 'Women' tab panel, show/hide based on tab state. -->
             <div id="tabs-1-panel-1" class="space-y-10 px-4 pb-8 pt-10" aria-labelledby="tabs-1-tab-1" role="tabpanel" tabindex="0">
@@ -577,21 +557,7 @@
                 <a href="#" class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800">Stores</a>
               </div>
             </div>
-  
-            <div class="ml-auto flex items-center">
-              <div class="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                <a href="#" class="text-sm font-medium text-gray-700 hover:text-gray-800">Sign in</a>
-                <span class="h-6 w-px bg-gray-200" aria-hidden="true"></span>
-                <a href="#" class="text-sm font-medium text-gray-700 hover:text-gray-800">Create account</a>
-              </div>
-  
-              <div class="hidden lg:ml-8 lg:flex">
-                <a href="#" class="flex items-center text-gray-700 hover:text-gray-800">
-                  <img src="https://tailwindui.com/img/flags/flag-canada.svg" alt="" class="block h-auto w-5 flex-shrink-0">
-                  <span class="ml-3 block text-sm font-medium">CAD</span>
-                  <span class="sr-only">, change currency</span>
-                </a>
-              </div>
+
   
               <!-- Search -->
               <div class="flex lg:ml-6">
@@ -612,6 +578,7 @@
                   <span class="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
                   <span class="sr-only">items in cart, view bag</span>
                 </a>
+                <div><button style="background-color: blue; border: 2px solid black; margin-left: 350px;"><a href="index.html">Go home</a></button></div>
               </div>
             </div>
           </div>
@@ -619,6 +586,84 @@
       </nav>
     </header>
   </div>
+
+  <style>
+    footer {
+        background-color: #2c3e50;
+        color: #fff;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .footer-info,
+    .social-links {
+        flex: 1;
+        margin: 10px;
+    }
+
+    .footer-info h3,
+    .social-links h3 {
+        color: #f39c12;
+    }
+
+    .footer-info p {
+        color: #ecf0f1;
+    }
+
+    .social-links ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .social-links ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    .social-links ul li:last-child {
+        margin-right: 0;
+    }
+
+    .social-links ul li a {
+        color: #f39c12;
+        text-decoration: none;
+    }
+
+    .copyright {
+        margin-top: 20px;
+        color: #bdc3c7;
+    }
+</style>
+</head>
+<body>
+
+<footer>
+<div class="footer-container">
+    <div class="footer-info">
+        <h3>Contact Us</h3>
+        <p>Email: xushnudegamberdiyev0gamil.com</p>
+        <p>Phone: +998950008002</p>
+        <p>Address: 123 Street, City, Country</p>
+    </div>
+    <div class="social-links">
+        <h3>Follow Us</h3>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </div>
+</div>
+<div class="copyright">
+    <p>&copy; 2024 Your Company. All rights reserved.</p>
+</div>
+</footer>
   
 </body>
 </html>
