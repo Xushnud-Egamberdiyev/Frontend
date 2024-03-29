@@ -2,10 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 .header{
     width: 1920px;
-    height: 840px;
+    height: 860px;
+    margin: 0 auto;
     background-image: url(../images/headerimg.png);
-    
-
 }
 
 
@@ -111,15 +110,23 @@
 }
 
 .header-main-button{
-    width: 261px;
+    width: 295px;
     height: 41px;
     margin-top: 48px;
-    margin-left: 830px;
+    margin-left: 815px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
     border: 1px solid white;
-    background: none;
     color: white;
     margin-bottom: 70px;
 }
+.header-main-button_katalog{
+    width: 290px;
+    height: 30px;
+}
+
 
 .header-main-button{
     font-family: "Roboto", sans-serif;
@@ -142,10 +149,14 @@
 .header-footer-right{
     border-right: 1px solid white;
     width: 1160px;
+    justify-content: center;
+    text-align: center;
 }
 
 .header-footer-left{
     width: 1160px;
+    justify-content: center;
+    text-align: center;
 }
 
 
