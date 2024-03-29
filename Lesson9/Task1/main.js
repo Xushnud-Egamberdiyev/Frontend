@@ -17,7 +17,7 @@ function check() {
         alert("Congratultions!")
     }
     else{   
-        alert("Incorrect!" + sum)
+        alert("Incorrect!" + sum)    
     }
 
 }
