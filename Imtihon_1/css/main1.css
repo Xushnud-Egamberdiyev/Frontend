@@ -159,6 +159,10 @@ button{
 .main2-photo-child{
     margin-top: 60px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
 }
 
 .main2-photo-child img{
