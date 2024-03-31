@@ -1,0 +1,13 @@
+@import url(page2header.css);
+@import url(page2main2.css);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background-origin: padding-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
