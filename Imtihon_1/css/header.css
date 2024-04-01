@@ -19,7 +19,7 @@
     /* font-weight: 400; */
     font-size: 14px;
     font-style: normal;
-
+    /* position: fixed; */
 }
 
 .search{
@@ -34,6 +34,7 @@
     margin-right: 127px;
     margin-top: 43px;
     font-size: 14px;
+    /* position: fixed; */
 }
 
 .logo-ojjo{
@@ -143,7 +144,7 @@
     text-align: center;
     width: 1110px;
     height: 60px;
-    margin-left: 405px;
+    /* margin-left: 405px; */
     margin-top: 29px;
 }
 
@@ -154,11 +155,7 @@
     text-align: center;
 }
 
-.header-footer-left{
-    width: 1160px;
-    justify-content: center;
-    text-align: center;
-}
+
 
 
 
