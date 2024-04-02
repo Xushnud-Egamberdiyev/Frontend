@@ -1,42 +1,84 @@
-function createUser() {
-    var firstName = document.getElementById('firstName').value;
-    var lastName = document.getElementById('lastName').value;
-  
-    var table = document.getElementById('employeeList').getElementsByTagName('tbody')[0];
-    var newRow = table.insertRow();
-  
-    var cell1 = newRow.insertCell(0);
-    var cell2 = newRow.insertCell(1);
-    var cell3 = newRow.insertCell(2);
-    var cell4 = newRow.insertCell(3);
-    var cell5 = newRow.insertCell(4);
-  
-    cell1.innerHTML = table.rows.length;
-    cell2.innerHTML = firstName;
-    cell3.innerHTML = lastName;
-    cell4.innerHTML = '<button onclick="deleteUser(this)">Delete</button>';
-    cell5.innerHTML = '<button onclick="updateUser(this)">Update</button>';
-  
-    document.getElementById('firstName').value = '';
-    document.getElementById('lastName').value = '';
-  }
-  
-  function deleteUser(btn) {
-    var row = btn.parentNode.parentNode;
-    row.parentNode.removeChild(row);
-  }
-  
-  function updateUser(btn) {
-    var row = btn.parentNode.parentNode;
-    var firstName = row.cells[1].innerHTML;
-    var lastName = row.cells[2].innerHTML;
-  
-    var newFirstName = prompt("Enter new first name", firstName);
-    var newLastName = prompt("Enter new last name", lastName);
-  
-    if (newFirstName !== null && newLastName !== null) {
-      row.cells[1].innerHTML = newFirstName;
-      row.cells[2].innerHTML = newLastName;
+var clients=[];
+  var myIndex;
+   function addClient(){
+    
+    var newClient={
+      name:document.getElementById("firstname").value,
+      email:document.getElementById("lastname").value
     }
+    clients.push(newClient)
+    displayClients()
   }
+
+
+
   
+  function displayClients(){
+    document.getElementById("form-list-client-body").innerHTML=""
+    for (i=0;i<clients.length;i++){
+      var myTr=document.createElement("tr")
+      for(a in clients[i]){
+        var mytd=document.createElement("td")
+        mytd.innerHTML=clients[i][a]
+        myTr.appendChild(mytd)
+      }
+      var actionTd=document.createElement("td")
+      var editBtn=document.createElement("button")
+      editBtn.innerHTML="Edit"
+      editBtn.setAttribute("class" , "btn btn-sm btn-primary")
+      editBtn.setAttribute("onclick" , "editClient("+i+")")
+
+      var deletebtn=document.createElement("button")
+      deletebtn.innerHTML="Delete"
+      deletebtn.setAttribute("class" , "btn btn-sm btn-danger")
+      deletebtn.setAttribute("onclick" , "deleteClient("+i+")")
+
+      actionTd.appendChild(editBtn)
+      actionTd.appendChild(deletebtn)
+      myTr.appendChild(actionTd)
+      document.getElementById("form-list-client-body").appendChild(myTr)
+
+      }
+      document.getElementById("firstname").value="";
+      document.getElementById("lastname").value=""
+  }
+
+
+
+
+  function editClient(i){
+    console.log(clients[i])
+    myIndex=i;
+    var updatebtn=document.createElement("button")
+    updatebtn.innerHTML="Update";
+    updatebtn.setAttribute("class", "btn btn-sm btn-success")
+    updatebtn.setAttribute("onclick","updClient()")
+    document.getElementById("saveupdate").innerHTML=""
+    document.getElementById("saveupdate").appendChild(updatebtn);
+    document.getElementById("firstname").value=clients[i].name
+    document.getElementById("lastname").value=clients[i].email
+  }
+
+
+
+  function updClient(){
+    var updatedClient={
+      name:document.getElementById("firstname").value,
+      email:document.getElementById("lastname").value
+    }
+    clients[myIndex]=updatedClient;
+    var crbtn=document.createElement("button")
+    crbtn.innerHTML="Save";
+    crbtn.setAttribute("onclick","addClient()")
+    crbtn.setAttribute("class","btn btn-sm btn-success")
+    document.getElementById("saveupdate").innerHTML=""
+    
+    document.getElementById("saveupdate").appendChild(crbtn);
+    
+    displayClients()
+  }
+
+  function deleteClient(i){
+    clients.splice(i,1)
+    displayClients()
+  }

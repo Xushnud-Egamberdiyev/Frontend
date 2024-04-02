@@ -1,102 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>User Management</title>
-<link rel="stylesheet" href="style.css">
-<style>
-  body {
-    font-family: Arial, sans-serif;
-  }
-  .container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  .container h2 {
-    margin-bottom: 20px;
-  }
-  .form-group {
-    margin-bottom: 15px;
-  }
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  .form-group input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  .btn-group {
-    margin-top: 20px;
-  }
-  .btn-group button {
-    padding: 10px 20px;
-    margin-right: 10px;
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 16px;
-  }
-  .btn-group button:last-child {
-    margin-right: 0;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
-<div class="container">
-  <h2>User Information</h2>
-  <div class="form-group">
-    <label for="firstName">First Name:</label>
-    <input type="text" id="firstName" name="firstName">
-  </div>
-  <div class="form-group">
-    <label for="lastName">Last Name:</label>
-    <input type="text" id="lastName" name="lastName">
-  </div>
-  <div class="btn-group">
-    <button onclick="createUser()">Create</button>
-
-  </div>
-</div>
-
-
-<br/>
-<table class="table" id="employeeList">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">First name</th>
-        <th scope="col">Last name</th>
-        <th scope="col">Delete</th>
-        <th scope="col">Update</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Mark</td>
-        <td>Otto </td>
-        <td><button onclick="deleteUser()">Delete</button>
-        <td><button onclick="updateUser()">UpdateButton</button></td></td>
-      </tr>
-    </tbody>
-  </table>
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="main.js"></script>
-
-</script>
-
+  <div class="container">
+    <div class="row">
+ 
+ 
+     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+ 
+ 
+ 
+     <div class="col-md-12">
+ 
+      <form class="form-horizontal" id="form-edit-client">
+       <fieldset>
+ 
+ 
+         <div class="form-group">
+           <label class="col-md-4 control-label" for="client-name">First Name</label>  
+           <div class="col-md-4">
+             <input id="firstname" name="client-name" type="text" placeholder="Enter First name" class="form-control input-md">
+           </div>
+         </div>
+ 
+         <div class="form-group">
+           <label class="col-md-4 control-label" for="client-email">Last Name</label>
+           <div class="col-md-4">
+             <div class="input-group">
+               <input id="lastname" name="client-email" class="form-control" placeholder="Enter Last Name" type="text">
+             </div>
+           </div>
+         </div>
+ 
+       </fieldset>
+     </form>
+     <div class="form-group">
+           <label class="col-md-4 control-label" for="btn-save"></label>
+           <div class="col-md-4" id="saveupdate">
+             <button id="btn-save" name="btn-save" class="btn btn-success" onclick="addClient()">Save</button>
+           </div>
+         </div>
+ 
+   </div> 
+ 
+ 
+ 
+ 
+   <!-- LIST -->
+   <div class=col-md-12>
+ 
+        <legend>Malumotlar jadvali</legend>
+ 
+      
+       <table class="table table-bordered table-condensed table-hover">
+         <thead>
+           <tr> 
+            <td>Id</td>
+             <td>First Name</td>
+             <th>Last Name</th>
+             <th>Actions</th>
+           </tr>
+ 
+         </thead>
+         <tbody id="form-list-client-body">
+ 
+         </tbody>
+       </table>
+     
+     
+   </div>
+ 
+ 
+   <br> 
+ 
+   <!-- view -->
+ 
+ <script type="text/javascript"></script>
+ <script src="main.js"></script>
+ 
+ 
+ </div>
+ </div>
+ 
 </body>
 </html>
