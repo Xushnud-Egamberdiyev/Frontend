@@ -1,0 +1,21 @@
+@import url(header.css);
+@import url(page-main.css);
+@import url(footer.css);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background-origin: padding-box;
+}
+
+body{
+    width: 1920px;
+    height: 840px;
+    margin: 0 auto;
+}
+
+
+.main-header{
+    width: 1300px !important;
+    margin-left: 800px;
+}
