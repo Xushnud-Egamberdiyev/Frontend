@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+ 
+ 
+     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+ 
+ 
+ 
+     <div class="col-md-12">
+ 
+      <form class="form-horizontal" id="form-edit-client">
+       <fieldset>
+ 
+ 
+         <div class="form-group">
+           <label class="col-md-4 control-label" for="client-name">First Name</label>  
+           <div class="col-md-4">
+             <input id="firstname" name="client-name" type="text" placeholder="Enter First name" class="form-control input-md">
+           </div>
+         </div>
+ 
+         <div class="form-group">
+           <label class="col-md-4 control-label" for="client-email">Last Name</label>
+           <div class="col-md-4">
+             <div class="input-group">
+               <input id="lastname" name="client-email" class="form-control" placeholder="Enter Last Name" type="text">
+             </div>
+           </div>
+         </div>
+ 
+       </fieldset>
+     </form>
+     <div class="form-group">
+           <label class="col-md-4 control-label" for="btn-save"></label>
+           <div class="col-md-4" id="saveupdate">
+             <button id="btn-save" name="btn-save" class="btn btn-success" onclick="addClient()">Save</button>
+           </div>
+         </div>
+ 
+   </div> 
+ 
+ 
+ 
+ 
+   <!-- LIST -->
+   <div class=col-md-12>
+ 
+        <legend>Malumotlar jadvali</legend>
+ 
+      
+       <table class="table table-bordered table-condensed table-hover">
+         <thead>
+           <tr> 
+             <td>First Name</td>
+             <th>Last Name</th>
+             <th>Actions</th>
+           </tr>
+ 
+         </thead>
+         <tbody id="form-list-client-body">
+ 
+         </tbody>
+       </table>
+     
+     
+   </div>
+ 
+ 
+   <br> 
+ 
+   <!-- view -->
+ 
+ <script type="text/javascript"></script>
+ <script src="main.js"></script>
+ 
+ 
+ </div>
+ </div>
+ 
+</body>
+</html>
