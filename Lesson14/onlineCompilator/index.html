@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C# Online Compiler</title>
+<style>
+    /* Add your CSS styles here */
+</style>
+</head>
+<body>
+    <h1>C# Online Compiler</h1>
+    <textarea id="code" rows="10" cols="50" placeholder="Enter your C# code here..."></textarea><br>
+    <button onclick="submitCode()">Compile & Execute</button><br>
+    <div id="output"></div>
+
+    <script>
+        function submitCode() {
+            var code = document.getElementById('code').value;
+            fetch('/compile', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ code: code })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('output').textContent = data.result || data.error;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
