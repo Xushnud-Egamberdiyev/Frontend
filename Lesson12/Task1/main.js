@@ -3,8 +3,8 @@ var clients=[];
    function addClient(){
     
     var newClient={
-      name:document.getElementById("firstname").value,
-      email:document.getElementById("lastname").value
+      firstname:document.getElementById("firstname").value,
+      lastname:document.getElementById("lastname").value
     }
     clients.push(newClient)
     displayClients()
@@ -55,16 +55,16 @@ var clients=[];
     updatebtn.setAttribute("onclick","updClient()")
     document.getElementById("saveupdate").innerHTML=""
     document.getElementById("saveupdate").appendChild(updatebtn);
-    document.getElementById("firstname").value=clients[i].name
-    document.getElementById("lastname").value=clients[i].email
+    document.getElementById("firstname").value=clients[i].firstname
+    document.getElementById("lastname").value=clients[i].lastname
   }
 
 
 
   function updClient(){
     var updatedClient={
-      name:document.getElementById("firstname").value,
-      email:document.getElementById("lastname").value
+      firstname:document.getElementById("firstname").value,
+      lastname:document.getElementById("lastname").value
     }
     clients[myIndex]=updatedClient;
     var crbtn=document.createElement("button")
