@@ -1,84 +1,83 @@
-var clients=[];
-  var myIndex;
-   function addClient(){
-    
-    var newClient={
-      firstname:document.getElementById("firstname").value,
-      lastname:document.getElementById("lastname").value
-    }
-    clients.push(newClient)
-    displayClients()
-  }
+document.getElementById('login-form').addEventListener('submit', function(event) {
+  event.preventDefault();
 
+  var username = document.getElementById('username').value;
+  var password = document.getElementById('password').value;
 
-
-  
-  function displayClients(){
-    document.getElementById("form-list-client-body").innerHTML=""
-    for (i=0;i<clients.length;i++){
-      var myTr=document.createElement("tr")
-      for(a in clients[i]){
-        var mytd=document.createElement("td")
-        mytd.innerHTML=clients[i][a]
-        myTr.appendChild(mytd)
+  fetch('https://api.sardorsohinazarov.uz/api/Auth/Login', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+          username: username,
+          password: password
+      })
+  })
+  .then(response => {
+      if (!response.ok) {
+          throw new Error('Network response was not ok');
       }
-      var actionTd=document.createElement("td")
-      var editBtn=document.createElement("button")
-      editBtn.innerHTML="Edit"
-      editBtn.setAttribute("class" , "btn btn-sm btn-primary")
-      editBtn.setAttribute("onclick" , "editClient("+i+")")
+      return response.json();
+  })
+  .then(data => {
+      fetchDevices(data.accessToken);
+  })
+  .catch(error => {
+      console.error('Fetch request failed:', error);
+      alert('Login failed. Please try again.');
+  });
+});
 
-      var deletebtn=document.createElement("button")
-      deletebtn.innerHTML="Delete"
-      deletebtn.setAttribute("class" , "btn btn-sm btn-danger")
-      deletebtn.setAttribute("onclick" , "deleteClient("+i+")")
+function fetchDevices(accessToken) {
+    fetch('https://api.sardorsohinazarov.uz/api/Devices/GetAll', {
+        method: 'GET',
+        headers: {
+            'Authorization': 'Bearer ' + accessToken
+        }
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        displayDevices(data);
+    })
+    .catch(error => {
+        console.error('Fetch request failed:', error);
+    });
+}
 
-      actionTd.appendChild(editBtn)
-      actionTd.appendChild(deletebtn)
-      myTr.appendChild(actionTd)
-      document.getElementById("form-list-client-body").appendChild(myTr)
+function displayDevices(data) {
+    var deviceList = document.getElementById('device-list');
+    var table = document.createElement('table');
+    var thead = document.createElement('thead');
+    var tbody = document.createElement('tbody');
 
-      }
-      document.getElementById("firstname").value="";
-      document.getElementById("lastname").value=""
-  }
+    var headerRow = document.createElement('tr');
+    var headers = ['ID', 'Full Name', 'Phone Number', 'Car Number']; 
+    headers.forEach(headerText => {
+        var th = document.createElement('th');
+        th.textContent = headerText;
+        headerRow.appendChild(th);
+    });
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
 
+    data.forEach(device => {
+        var tr = document.createElement('tr');
+        var values = [device.id, device.fullName, device.phoneNumber, device.carNumber];
+        values.forEach(value => {
+            var td = document.createElement('td');
+            td.textContent = value;
+            tr.appendChild(td);
+        });
+        tbody.appendChild(tr);
+    });
+    table.appendChild(tbody);
 
-
-
-  function editClient(i){
-    console.log(clients[i])
-    myIndex=i;
-    var updatebtn=document.createElement("button")
-    updatebtn.innerHTML="Update";
-    updatebtn.setAttribute("class", "btn btn-sm btn-success")
-    updatebtn.setAttribute("onclick","updClient()")
-    document.getElementById("saveupdate").innerHTML=""
-    document.getElementById("saveupdate").appendChild(updatebtn);
-    document.getElementById("firstname").value=clients[i].firstname
-    document.getElementById("lastname").value=clients[i].lastname
-  }
-
-
-
-  function updClient(){
-    var updatedClient={
-      firstname:document.getElementById("firstname").value,
-      lastname:document.getElementById("lastname").value
-    }
-    clients[myIndex]=updatedClient;
-    var crbtn=document.createElement("button")
-    crbtn.innerHTML="Save";
-    crbtn.setAttribute("onclick","addClient()")
-    crbtn.setAttribute("class","btn btn-sm btn-success")
-    document.getElementById("saveupdate").innerHTML=""
-    
-    document.getElementById("saveupdate").appendChild(crbtn);
-    
-    displayClients()
-  }
-
-  function deleteClient(i){
-    clients.splice(i,1)
-    displayClients()
-  }
+    deviceList.appendChild(table);
+    alert('Login successful!');
+}
