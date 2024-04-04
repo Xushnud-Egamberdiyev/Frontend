@@ -1,31 +1,31 @@
 const express = require('express');
-const { exec } = require('child_process');
-const bodyParser = require('body-parser');
+const edge = require('edge');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const port = 3000;
 
-app.use(bodyParser.json());
+app.use(express.static('public'));
+app.use(express.json());
 
-app.post('/compile', (req, res) => {
-    const code = req.body.code;
-    const filename = 'temp.cs';
-    
-    // Write C# code to a file
-    require('fs').writeFileSync(filename, code);
+const compileAndRun = edge.func(`
+    #r "System.IO.Compression.FileSystem.dll"
 
-    // Compile and execute the C# code
-    exec(`csc ${filename} && ${filename.replace('.cs', '.exe')}`, (error, stdout, stderr) => {
-        if (error) {
-            console.error('Error:', error);
-            res.json({ error: stderr });
-        } else {
-            console.log('Output:', stdout);
-            res.json({ result: stdout });
+    async (input) => {
+        try {
+            var result = await CSharpScript.EvaluateAsync(input.ToString());
+            return new { result };
+        } catch (Exception e) {
+            return new { error = e.Message };
         }
-    });
+    }
+`);
+
+app.post('/compile', async (req, res) => {
+    const { code } = req.body;
+    const result = await compileAndRun(code);
+    res.json(result);
 });
 
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+app.listen(port, () => {
+    console.log(`Server is running at http://localhost:${port}`);
 });
