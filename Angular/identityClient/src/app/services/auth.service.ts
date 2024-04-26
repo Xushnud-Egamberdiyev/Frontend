@@ -34,4 +34,8 @@ export class AuthService {
     return this.http.post<RegisterResponse>(this.apiUrl+'Users/Register', data1);
   }
 
+  logout(){
+    localStorage.setItem(this.tokenKey, '')
+  }
+
 }
